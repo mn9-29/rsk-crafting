@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/06ca6fe24a.js" crossorigin="anonymous"></script>
+	<link href="styles.css" rel="stylesheet">
+</head>
+35px
+
+<body>
+
+	<audio id="achve" src="sounds/gameachiveactivated.mp3"></audio>
+	<audio id="mouse" src="sounds/gamemouse.mp3"></audio>
+	<audio id="level" src="sounds/gamenewlevel.mp3"></audio>
+	<audio id="switch" src="sounds/gameswitching.mp3"></audio>
+	<audio id="failed" src="sounds/failed.mp3"></audio>
+	<audio id="longpop"
+		src="https://cdn.discordapp.com/attachments/729643536877748315/981150228294041620/mixkit-long-pop-2358.mp3"></audio>
+	<audio id="bosstalking"
+		src="https://cdn.discordapp.com/attachments/729643536877748315/984618457939210270/steelthescriptnoobaby.mp3"></audio>
+
+	<div class="textinbottom"></div>
+	<div class="talkwithbot" style="display: none;">
+		<div class="overlay"></div>
+		<div class="dialogbox text-center " style="top: 40vh;overflow-y: auto;height: 55.75vh;width: 30.5vh;">
+
+
+			<div class="card arrow-left option0">
+				<div class="card-body d-flex justify-content-center align-items-center closeinterfaces"
+					style="box-shadow: 0px 0px 6px -1px rgba(0, 0, 0, 0);">
+					<span id="option0" style="font-size: 30px;"> - </span>
+				</div>
+			</div>
+			<div class="card arrow-left option1">
+				<div class="card-body d-flex justify-content-center align-items-center closeinterfaces"
+					style="box-shadow: 0px 0px 6px -1px rgb(0, 0, 0, 0);">
+					<span id="option1" style="font-size: 30px;"> - </span>
+				</div>
+			</div>
+			<div class="card arrow-left option2">
+				<div class="card-body d-flex justify-content-center align-items-center closeinterfaces"
+					style="box-shadow: 0px 0px 6px -1px rgb(0, 0, 0, 0);">
+					<span id="option2" style="font-size: 30px;"> - </span>
+				</div>
+			</div>
+			<div class="card arrow-left option3">
+				<div class="card-body d-flex justify-content-center align-items-center closeinterfaces"
+					style="box-shadow: 0px 0px 6px -1px rgb(0, 0, 0, 0);">
+					<span id="option3" style="font-size: 30px;"> - </span>
+				</div>
+			</div>
+			<div class="card arrow-left option4">
+				<div class="card-body d-flex justify-content-center align-items-center closeinterfaces"
+					style="box-shadow: 0px 0px 6px -1px rgb(0, 0, 0, 0);">
+					<span id="option4" style="font-size: 30px;"> - </span>
+				</div>
+			</div>
+			<div class="card arrow-left option5">
+				<div class="card-body d-flex justify-content-center align-items-center closeinterfaces"
+					style="box-shadow: 0px 0px 6px -1px rgb(0, 0, 0, 0);">
+					<span id="option5" style="font-size: 30px;"> - </span>
+				</div>
+			</div>
+			<div class="card arrow-left option6">
+				<div class="card-body d-flex justify-content-center align-items-center closeinterfaces"
+					style="box-shadow: 0px 0px 6px -1px rgb(0, 0, 0, 0);">
+					<span id="option6" style="font-size: 30px;"> - </span>
+				</div>
+			</div>
+			<div class="card arrow-left closeinterface">
+				<div class="card-body d-flex justify-content-center align-items-center closeinterfaces"
+					style="box-shadow: 0px 0px 6px -1px rgb(0, 0, 0, 0);">
+					<span id="" style="font-size: 31px;">Thank You.</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	<div style="/* position: absolute; */ display: none;" class="craftermenu">
+
+		<div id="000" class="craft"
+			style="background-image:url(https://cdn.discordapp.com/attachments/937686665659564054/1053056335022931968/Screenshot_8_4.png);  position: absolute;top: 28vh;left: 10vh;width: 65%;height: 55%;overflow-y: scroll;overflow-x: hidden;">
+
+			<div class="weapon1"
+				style="position: absolute;top: 1vh;left: 0vh;background: rgba(115, 115, 115, 0.546); width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon2"
+				style="position: absolute;top: 1vh;left: 29vh;background: rgba(115, 115, 115, 0.546);width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon3"
+				style="position: absolute;top: 1vh;left: 58vh;background: rgba(115, 115, 115, 0.546);width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon4"
+				style="position: absolute;top: 1vh;left: 87vh;background: rgba(115, 115, 115, 0.546);width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon5"
+				style="position: absolute;top: 29vh;left: 0vh;background: rgba(115, 115, 115, 0.546);width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon6"
+				style="position: absolute;top: 29vh;left: 29vh;background: rgba(115, 115, 115, 0.546);width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon7"
+				style="position: absolute;top: 29vh;left: 58vh;background: rgba(115, 115, 115, 0.546);width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon8"
+				style="position: absolute;top: 29vh;left: 87vh;background: rgba(115, 115, 115, 0.546);width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon9"
+				style="position: absolute;top: 56vh;left: 0vh;background: rgba(115, 115, 115, 0.546);width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon10"
+				style="position: absolute;top: 56vh;left: 29vh;background: rgba(115, 115, 115, 0.546);width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon11"
+				style="position: absolute;top: 56vh;left: 58vh;background: rgba(115, 115, 115, 0.546);width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon12"
+				style="position: absolute;top: 56vh;left: 87vh;background: rgba(115, 115, 115, 0.546);width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+
+
+			<div class="weapon13"
+				style="position: absolute;top: 83vh;left: 0vh;background: rgba(115, 115, 115, 0.546);width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon14"
+				style="position: absolute;top: 83vh;left: 29vh;background: rgba(115, 115, 115, 0.546);width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon15"
+				style="position: absolute;top: 83vh;left: 58vh;background: rgba(115, 115, 115, 0.546);width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon16"
+				style="position: absolute;top: 83vh;left: 87vh;background: rgba(115, 115, 115, 0.546);width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+
+
+			<div class="weapon17"
+				style="position: absolute;top: 110vh;left: 0vh;background: rgba(115, 115, 115, 0.546);width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon18"
+				style="position: absolute;top: 110vh;left: 29vh;background: rgba(115, 115, 115, 0.546);width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+
+			<div class="weapon19"
+				style="position: absolute;top: 110vh;left: 58vh;background: rgba(115, 115, 115, 0.546);width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon20"
+				style="position: absolute;top: 110vh;left: 87vh;background: #ffffff0;width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon21"
+				style="position: absolute;top: 137vh;left: 0vh;background: rgba(115, 115, 115, 0.546);width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon22"
+				style="position: absolute;top: 137vh;left: 29vh;background: rgba(115, 115, 115, 0.546);width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon23"
+				style="position: absolute;top: 137vh;left: 58vh;background: rgba(115, 115, 115, 0.546);width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon24"
+				style="position: absolute;top: 137vh;left: 87vh;background: rgba(115, 115, 115, 0.546);width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon25"
+				style="position: absolute;top: 164vh;left: 0vh;background: rgba(115, 115, 115, 0.546);width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon26"
+				style="position: absolute;top: 164vh;left: 29vh;background: #ffffff0;width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon27"
+				style="position: absolute;top: 164vh;left: 58vh;background: #ffffff00;width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon28"
+				style="position: absolute;top: 164vh;left: 87vh;background: #ffffff00;width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon29"
+				style="position: absolute;top: 191vh;left: 0vh;background: #ffffff00;width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+			<div class="weapon30"
+				style="position: absolute;top: 191vh;left: 29vh;background: #ffffff00;width: 26vh;height: 25vh;">
+				<div style="position: absolute; color: black; top: 2vh; left: 3vh; font-size: 1.98vh; "
+					class="itemname">weapon</div>
+				<div class="stylimgg"
+					style="position: absolute; color: black; top: 9vh; left: 0vh; font-size: 1.98vh; width: 100%; text-align: center;">
+					<img class="itemimg" src="" width="194">
+				</div>
+				<div style="position: absolute;color: #1fef72c9;top: 16.5vh;right: 0vh;font-size: 2.28vh;width: 40%;text-align: center;padding-right: 1.0vh;direction: rtl;font-family: cursive;"
+					class="itemprice"></div>
+				<div class="creatinfo"
+					style="position: absolute;color: #ffffffc9;top: 20vh;left: 17.19vh;font-size: 1.58vh;padding: 0.9vh;padding-bottom: 0.3vh;padding-top: 0.3vh;background: #000000;border-radius: 3vh;">
+					➜</div>
+			</div>
+		</div>
+		
+		
+		<div class="weaponinfo"
+			style="display: none; position: absolute;background-image:url(https://cdn.discordapp.com/attachments/937686665659564054/1052691926962425916/inkroller_1a.png);background-repeat: no-repeat;width: 39vh;height: 66vh;right: -45vh;top: 20.85vh;transform: skewY(-3deg);border-radius: 0.5vh;animation: slidein ease 0.4s 1 0.2s forwards;/* display: none; */">
+			<div class="theitemname" id="00"
+				style="position: absolute; color: rgb(91, 91, 91); text-shadow: 1px 1px 0px #fff, 1px 1px 10px #ccc; font-size: 5.2vh; top: -3.8vh; width: 100%; text-align: center; font-family: cursive;">
+				WEAPON INFO</div>
+			<div class="closereq"
+				style="position: absolute;right: 1.5vh;top: 0.5vh; color: #ffcf22; font-size: 4vh; transform: skewY( 3deg);">
+				➜</div>
+
+			<div class="reqq" id="00"
+				style="position: absolute;width: 100%;text-align: center;top: 6vh;color: rgb(91, 91, 91);font-size: 2.0vh;font-family: cursive;transform: skewY(3deg);">
+				<p>REQUIREMENTS</p>
+
+				<div style="width: 100%;text-align: center;">
+					<div class="webre1"
+						style="display: none; position: absolute;background: rgb(91, 91, 91);color: rgb(0, 0, 0);align-items: center;text-align: left;width: 85%;height: 4.5vh;border-radius: 0.5vh;left: 8%; padding-top: 1vh; padding-left: 5vh;">
+					</div>
+
+					<div class="webre2"
+						style="display: none; position: absolute;background: rgb(91, 91, 91);color: rgb(0, 0, 0);align-items: center;text-align: left;width: 85%;height: 4.5vh;border-radius: 0.5vh;left: 8%;top: 9.5vh; padding-top: 1vh; padding-left: 5vh;">
+					</div>
+
+					<div class="webre3"
+						style="display: none; position: absolute;background: rgb(91, 91, 91);color: rgb(0, 0, 0);align-items: center;text-align: left;width: 85%;height: 4.5vh;border-radius: 0.5vh;left: 8%;top: 14.5vh; padding-top: 1vh; padding-left: 5vh;">
+					</div>
+
+					<div class="webre4"
+						style="display: none; position: absolute;background: rgb(91, 91, 91);color: rgb(0, 0, 0);align-items: center;text-align: left;width: 85%;height: 4.5vh;border-radius: 0.5vh;left: 8%;top: 19.5vh; padding-top: 1vh; padding-left: 5vh;">
+					</div>
+
+					<div class="webre5"
+						style="display: none; position: absolute;background: rgb(91, 91, 91);color: rgb(0, 0, 0);align-items: center;text-align: left;width: 85%;height: 4.5vh;border-radius: 0.5vh;left: 8%;top: 24.5vh; padding-top: 1vh; padding-left: 5vh;">
+					</div>
+
+					<div class="webre6"
+						style="display: none; position: absolute;background: rgb(91, 91, 91);color: rgb(0, 0, 0);align-items: center;text-align: left;width: 85%;height: 4.5vh;border-radius: 0.5vh;left: 8%;top: 29.5vh; padding-top: 1vh; padding-left: 5vh;">
+					</div>
+
+					<div class="webre7"
+						style="display: none; position: absolute;background: rgb(91, 91, 91);color: rgb(0, 0, 0);align-items: center;text-align: left;width: 85%;height: 4.5vh;border-radius: 0.5vh;left: 8%;top: 34.5vh; padding-top: 1vh; padding-left: 5vh;">
+					</div>
+
+					<div class="webre8"
+						style="display: none; position: absolute;background: rgb(91, 91, 91);color: rgb(0, 0, 0);align-items: center;text-align: left;width: 85%;height: 4.5vh;border-radius: 0.5vh;left: 8%;top: 39.5vh; padding-top: 1vh; padding-left: 5vh;">
+					</div>
+				</div>
+
+				<div style="width: 100%;height: 100%;position: absolute;top: 46vh;">
+					<div class="wtext1" style="position: absolute;font-size: 4.5vh;left: 4vh;">25.750</div>
+					<div class="wtext2"
+						style="position: absolute; left: 4vh; top: 6.5vh; width: 65%; font-size: 15px; text-align: left; line-height: 17px;">
+						This weapon is very powerful, it will increase you 15 points, it is a wonderful weapon</div>
+					<div class="craftnow" id="0"
+						style="position: absolute;background: #ffcf22;width: 11vh;height: 3.5vh;border-radius: 4vh;right: 3vh;top: 2vh;">
+						<p class="crafttp"
+							style="color: black;padding-top: 5px;padding-left: 2px;font-size: 1.5vh;font-weight: bold;line-height: 2.5vh;">
+							CRAFT</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- end menu craft -->
+
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<script src="scripts.js" type="text/javascript"></script>
+</body>
+
+</html>
